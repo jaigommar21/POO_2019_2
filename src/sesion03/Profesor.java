@@ -6,8 +6,8 @@ public class Profesor {
 	private String nombre;
 	private int horasTrabajadas;
 	private double tarifaPorHora;
-	public static int contadorObj;
-	public static int sumaSueldos;
+	static private int contadorObj;
+	static private int sumaSueldos;
 
 	static {
 		contadorObj = 0;
