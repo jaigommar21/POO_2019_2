@@ -74,7 +74,7 @@ public class Postulante extends Persona {
 		String ret = "-1";
 		
 		// Procesar datos
-		if(this.obtenerPromedio() > 14)
+		if(this.obtenerPromedio() >= 14)
 			ret = "ACEPTADO";
 		else
 			ret = "RECHAZADO";
