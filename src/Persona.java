@@ -7,9 +7,9 @@
  */
 public class Persona {
 
-	private String nombre;
-	private String dni;
-	private String direccion;
+	protected String nombre;
+	protected String dni;
+	protected String direccion;
 
 
 	public Persona() {

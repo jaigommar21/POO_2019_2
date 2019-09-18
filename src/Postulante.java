@@ -13,7 +13,10 @@ public class Postulante extends Persona {
 	public Postulante(String nombre, String dni, 
 			String direccion, double nota1, 
 			double nota2) {
-		super(nombre, dni, direccion);
+		//super(nombre, dni, direccion);
+		this.nombre = nombre;
+		this.dni = dni;
+		this.direccion = direccion;
 		this.nota1 = nota1;
 		this.nota2 = nota2;
 	}
