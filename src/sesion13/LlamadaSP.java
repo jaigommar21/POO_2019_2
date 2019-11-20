@@ -21,7 +21,7 @@ public class LlamadaSP {
 
 			String query ="{CALL CONTAR_ALUMNOS (?,?)} ";
 			CallableStatement cstatement = con.prepareCall(query);
-			cstatement.setInt("V_EDAD", 19);//Tipo entero
+			cstatement.setInt("V_EDAD", 20);//Tipo entero
 			cstatement.registerOutParameter("V_NRO_ALUMNOS",Types.BINARY);
 			cstatement.execute();
 			int  nroAlumnos =cstatement.getInt(2);
