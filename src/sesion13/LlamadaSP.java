@@ -13,7 +13,7 @@ public class LlamadaSP {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			String url = "jdbc:mysql://localhost/TECSUP?useSSL=false&serverTimezone=UTC";
+			String url = "jdbc:mysql://localhost:3306/TECSUP?useSSL=false&serverTimezone=UTC";
 			String usuario = "root"; //
 			String clave = "123456"; //
 	
