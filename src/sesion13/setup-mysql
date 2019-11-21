@@ -1,16 +1,22 @@
-###################################################
-mysqld --initialize
+Inicializar la base de datos :
+------------------------------------------------------
+1.- mysqld --initialize
 
-mysqld --init-file=d:/config/init.txt --console
 
+Paso para cambiar la clave del usuario root en mysql :
+------------------------------------------------------
 
-#####################################################
-init.txt
--------------------------
-ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
-----------------------------
+1.- Crear el archivo init.txt en la ruta d:/config
 
-################################################
+2.- El archivo init.txt debe tener la siguiente sentencia:
 
-mysql -u root -p 
+	ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
+
+3.- Ejecutar el servidor de la base de datos con el siguiente comando:
+
+     mysqld --init-file=d:/config/init.txt --console
+
+4.- Desde el cliente de mysql conectarse con la nueva clave de root que es 123456
+
+    mysql -u root -p 
 
